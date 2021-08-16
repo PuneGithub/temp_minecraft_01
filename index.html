@@ -1,0 +1,105 @@
+<!--
+ ออกแบบโดย Peaceful Dev
+ เว็บไซต์ https://peaceful-dev.netlify.app/
+ แฟนเพจ https://www.facebook.com/Peaceful.Dev
+ License: none (public domain)
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Minecraft Template</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="nav">
+                    <div class="logo">
+                        <img src="" alt="">
+                    </div>
+                    <ul class="menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Donate</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="main-header">
+        <div class="container">
+            <h1 class="big">Minecraft Server</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur natus repellendus blanditiis quidem
+                dolore deleniti.</p>
+            <div class="header-btn">
+                <!-- เมื่อกดปุ่ม planow จะทำการแสดง ip server minecraft -->
+                <button class="btn" onclick="buttonClick()">
+                    playnow
+                </button>
+                <p id="play"></p>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="content-header">
+                <h2>Minecraft Survival</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quia?</p>
+            </div>
+            <div class="content-grid">
+                <div class="content-items">
+                    <i class="fas fa-cube"></i>
+                    <h4>Survival</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, ratione.</p>
+                </div>
+                <div class="content-items">
+                    <i class="fas fa-gamepad"></i>
+                    <h4>MiniGame</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, ratione.</p>
+                </div>
+                <div class="content-items">
+                    <i class="fas fa-info-circle"></i>
+                    <h4>Support 24hr</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, ratione.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <section class="footer-top">
+            <h1>contact</h1>
+            <div class="center">
+                <!-- 
+                    Contact icon
+                    icon สามารถเปลี่ยนได้
+                    โดยต้องเข้าไปที่เว็บไซต์ https://fontawesome.com/
+                -->
+                <ul class="footer-contact">
+                    <li><a href="#" id="facebook"><i class="fab fa-facebook footer-contact-item"></i></a></li>
+                    <li><a href="#" id="youtube"><i class="fab fa-youtube footer-contact-item"></i></a></li>
+                    <li><a href="#" id="discord"><i class="fab fa-discord footer-contact-item"></i></a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="footer-bottom">
+            <p>&copy; 2021 by <a href="#">Peaceful Dev</a></p>
+        </section>
+    </footer>
+    <script>
+        // function buttonclick เมื่อทำการกดปุ่มจะแสดงข้อความที่เขียนเอาไว้
+        function buttonClick() {
+            document.getElementById("play").innerHTML = "IP mc-peaceful.tk" //ใส่ ip server
+        }
+    </script>
+</body>
+
+</html>
