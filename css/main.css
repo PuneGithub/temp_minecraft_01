@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap');
+/*
+ ออกแบบโดย Peaceful Dev
+ เว็บไซต์ https://peaceful-dev.netlify.app/
+ แฟนเพจ https://www.facebook.com/Peaceful.Dev
+ License: none (public domain)
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    font-family: 'Oswald', sans-serif;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.container {
+    max-width: 1140px;
+    width: 98%;
+    margin: 0 auto;
+}
+
+/* nav */
+nav {
+    height: 5em;
+    background: #f7f8fa;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5em;
+}
+
+.nav ul.menu {
+    display: flex;
+}
+
+.nav ul.menu li {
+    margin-right: 2em;
+}
+
+.nav ul.menu li a {
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.nav ul.menu li a:hover {
+    color: #5e5a5a;
+}
+
+/* header */
+.main-header {
+    text-align: center;
+    color: #f1f0ee;
+    background: url(../img/header_bg.png) no-repeat; /* เปลี่ยน background header */
+    width: 100%;
+    height: 500px;
+}
+.main-header h1{
+    padding: 1em;
+    font-size: 4em;
+}
+.main-header p{
+    margin-top: .5em;
+    font-size: 1.5em;
+    color: #cacaca;
+}
+
+.big {
+    font-weight: bold;
+}
+
+.btn {
+    margin-top: 2em;
+    display: inline-block;
+    background: #18b842;
+    padding: 1em 2.5em;
+    color: #2e2e2e;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* content */
+.content {
+    width: 100%;
+    height: auto;
+    background: #f7f8fa;
+    padding: 4em 0;
+}
+
+.content-header{
+    padding: 1em;
+    text-align: center;
+}
+
+.content-header h2{
+    margin-bottom: 1em;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.content-header p{
+    font-size: 1em;
+    color: #2e2e2e;
+}
+
+.content-grid {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+}
+
+.content-items {
+    color: #5e5a5a;
+}
+
+.content-items i{
+    font-size: 2.5em;
+    margin-bottom: .5em;
+    color: #104ca5;
+}
+
+.content-items h4{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: .5em;
+    color: #2e2e2e;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: #181818;
+}
+
+.footer-top {
+    background: #fafafa;
+    padding: 3em 0;
+}
+
+.footer-top h1{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.footer-contact {
+    width: 8%;
+    justify-content: space-between;
+    margin-top: 1em;
+    display: flex;
+}
+
+.footer-contact i{
+    font-size: 1.7em;
+    transition: 0.5s;
+}
+
+.footer-contact i:hover{
+    color: #2c2c2c;
+}
+
+#facebook {
+    color: #105fd4;
+}
+
+#youtube {
+    color: #e41a1a;
+}
+#discord {
+    color: #3c46ce;
+}
+
+.center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-bottom {
+    color: #181818;
+    background: #f3f1f1;
+    padding: 1.5em 0;
+}
+.footer-bottom a{
+    color: #181818;
+    text-decoration: none;
+}
+.footer-bottom a:hover{
+    text-decoration: underline;
+}
+
+/* media queries */
+@media only screen and (max-width: 992px) {
+    .footer-contact {
+        width: 18%;
+    }
+}
+@media only screen and (max-width: 610px) {
+    .content-items p{
+        margin-bottom: .5em;
+    }
+}
+@media only screen and (max-width: 480px) {
+    nav {
+        height: 11em;
+        background: #f7f8fa;
+        transition: 0.5s;
+    }
+    .nav {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        height: 5em;
+    }
+    .nav ul.menu {
+        display: grid;
+    }
+    .nav ul.menu li {
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .footer-contact {
+        display: grid;
+        justify-content: center;
+    }
+    .footer-contact-item {
+        margin-bottom: 1em;
+    }
+}
+
